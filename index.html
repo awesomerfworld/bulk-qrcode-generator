@@ -1,0 +1,55 @@
+<!DOCTYPE html><!-- for html-5 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="language" content="en"/>
+
+<!-- CSS -->
+<link rel="stylesheet" href="extension/index.css"/>
+
+<!-- JS -->
+<script type="text/javascript" src="extension/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="extension/index.js" ></script>
+<script type="text/javascript" src="extension/qrcode.js" ></script>
+<link href="" rel="icon" />
+<title>QR Code Generator</title>
+
+<style type="text/css">
+#wrapper  {padding:10px 0%;}
+#result img {border: 1px solid black; padding: 5px;margin:0px 0px 12px 0px;}
+</style>
+
+<body>
+  <div id="wrapper">
+  <div class="grid">
+    <div class="column-12">
+      <h1> QR Code Generator</h1>
+      Prefix : <input id="prefix" autofocus placeholder="Type Something"/>
+      Start from : <input id="sf" class="range" type="number" autofocus placeholder="Number only"/>
+      - <input id="f" type="number" class="range" autofocus placeholder="Number only"/>
+      <button class="generate" type="button">Generate!</button>
+      <button class="refresh" type="button">Refresh</button>
+      <br />
+      <br />
+      <hr class="line">
+      <div id="editor"></div>
+    </div>
+  </div>
+  <div class="grid res">
+    <div class="column-12">
+      <div id="result"></div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+//Init
+$(document).ready(function(){
+  $('body').qrCode();
+});
+
+</script>
