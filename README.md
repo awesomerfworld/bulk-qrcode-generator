@@ -1,4 +1,4 @@
-# bulk_qrCode_generator
+# bulk qrCode generator
 This is a simple application to generate bulk QR Code. I made this application to make asset number labelling easier.
 
 Some field must be fill,
