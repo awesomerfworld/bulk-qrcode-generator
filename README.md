@@ -11,7 +11,7 @@ E.g :
  - Prefix : AIND-00
  - Start Number : 1
  - End Number : 20
- - **Result : AIND-001 until AIND-0020**
+ - **Result : AIND-001 until AIND-0020 in qrcode**
 
 ## Credit
 I would to say thank you to :
